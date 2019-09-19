@@ -1,9 +1,12 @@
 package com.example.tvspecification;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
@@ -12,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import static android.os.Build.VERSION.SDK_INT;
 
 public class TVinfo extends AppCompatActivity {
-    public TextView version_release, version_incremental, version_sdk_number, board, bootloader, brand, cpu_abi, cpu_abi2, display, fingerprint, hardware, host, id, manufacturer, model, product, serial, tags, time, type, unknown, user, resolution, support4k;
+    public TextView privacy_policy, version_release, version_incremental, version_sdk_number, board, bootloader, brand, cpu_abi, cpu_abi2, display, fingerprint, hardware, host, id, manufacturer, model, product, serial, tags, time, type, unknown, user, resolution, support4k;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,5 +95,10 @@ public class TVinfo extends AppCompatActivity {
                 })
                 .setNegativeButton("No", null)
                 .show();
+    }
+    public void txt_privacyPolicy(View view) {
+        Intent openURL = new Intent(android.content.Intent.ACTION_VIEW);
+        openURL.setData(Uri.parse("https://sites.google.com/view/tv-specification/home"));
+        startActivity(openURL);
     }
 }
