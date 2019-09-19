@@ -25,6 +25,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="DEVICE SPECIFICATIONS"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:paddingBottom="20dp"
+                    android:textSize="30sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Manufacturer"
                     android:textColor="@color/textColor"
                     android:textStyle="bold" />

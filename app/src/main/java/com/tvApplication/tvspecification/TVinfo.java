@@ -1,4 +1,4 @@
-package com.example.tvspecification;
+package com.tvApplication.tvspecification;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -21,7 +21,7 @@ public class TVinfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tvinfo);
-
+        getSupportActionBar().hide();
         version_release = findViewById(R.id.versionRelease);
         version_incremental = findViewById(R.id.versionIncremental);
         version_sdk_number = findViewById(R.id.versionSdkNumber);
